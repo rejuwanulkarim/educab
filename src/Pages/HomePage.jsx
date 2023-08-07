@@ -1,13 +1,15 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
+import Courses from '../Components/Coueses'
 
 function HomePage() {
     return (
         <>
-<Navbar/>
-<div className="text">
-    
-</div>
+            <Navbar />
+            <Courses />
+            <div className="text">
+
+            </div>
 
         </>
     )

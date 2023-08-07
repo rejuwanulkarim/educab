@@ -64,7 +64,7 @@
 .btn-login {
     font-size: 16px;
     background-color: transparent;
-    color: white;
+    color: blue;
     border-radius: 9px;
     height: 42.5px;
     width: 102px;
@@ -78,27 +78,24 @@
     position: relative;
     border-radius: 8px;
 }
+.btn-login:hover {
+    box-shadow: 0px 0px 6px -3px black;
 
-.btn-login span {
-    z-index: 5;
-    position: relative;
 }
 
-.btn-login::before {
-    content: "";
-    background-color: black;
-    position: absolute;
+.user-icon {
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    overflow: hidden;
+    fill: blue;
+    /* border: 2px solid; */
+    /* cursor: pointer; */
+    margin-right: 2rem;
+}
+
+.user-icon img {
     width: 100%;
     height: 100%;
-    color: black;
-    z-index: 2;
-    border-radius: 8px;
-    /* transition: 0.5s; */
-
-}
-
-.btn-login:hover::before {
-    width: 105px;
-    height: 45px;
-    /* transition: 0.1s; */
+    object-fit: contain;
 }

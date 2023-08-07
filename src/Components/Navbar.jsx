@@ -1,7 +1,8 @@
 import React from 'react'
 import '../css/Navbar.css'
 import NavLogo from "../Images/FavIcon.png"
-import UserLogo from '../svg/user-solid.svg'
+// import UserLogo from '../svg/user-solid.svg'
+import UserIcon from '../svg/user-solid.svg'
 function Navbar() {
     const Logedin = false;
     return (
@@ -22,9 +23,9 @@ function Navbar() {
                 <li className="navitems"><a href="/">Free Online Courses</a></li>
             </ul>
             <div className="user-login">{
-                Logedin ? <a className="user-icon">
+                Logedin ? <a href='#' className="user-icon">
                     <img src={UserIcon} alt="" />
-                </a> : <a className="btn-login"><span>Login</span></a>
+                </a> : <button className="btn-login">Login</button>
 
 
             }

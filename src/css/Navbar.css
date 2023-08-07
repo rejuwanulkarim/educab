@@ -1,0 +1,104 @@
+.navitems a {
+    text-decoration: none;
+}
+
+.navitems a:hover {
+    color: blue;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.navlogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo2 {
+    border-radius: 50%;
+    width: 2rem;
+}
+
+.navlogo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.logo {
+    font-family: Helvetica, Sans-Serif;
+    color: black;
+    font-size: 27px;
+}
+
+
+.navlist {
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.user-login {
+    position: relative;
+    grid-row: 1;
+    display: flex;
+    /* flex-direction: ; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.btn-login {
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    border-radius: 9px;
+    height: 42.5px;
+    width: 102px;
+    border: none;
+    outline: none;
+    /* margin-right: 1.2rem; */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 8px;
+}
+
+.btn-login span {
+    z-index: 5;
+    position: relative;
+}
+
+.btn-login::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: black;
+    z-index: 2;
+    border-radius: 8px;
+    /* transition: 0.5s; */
+
+}
+
+.btn-login:hover::before {
+    width: 105px;
+    height: 45px;
+    /* transition: 0.1s; */
+}

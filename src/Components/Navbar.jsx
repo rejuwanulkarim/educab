@@ -3,28 +3,19 @@ import '../css/Navbar.css'
 import NavLogo from "../Images/FavIcon.png"
 import UserIcon from '../svg/user-solid.svg'
 function Navbar() {
-    let navlist = document.getElementsByClassName("navlist")[0];
-    let navlogo = document.getElementsByClassName("navlogo")[0];
-
-    const Navhide = (width) => {
-        navlist.setAttribute("style", `left:-${width}px;`)
-
-        navlogo.setAttribute("style", "position:reletive !important;top:7px;")
-    }
-    window.onload = () => {
-        Navhide(-window.innerWidth)
-        navlogo.setAttribute("style", "position:reletive !important;top:7px;")
-
-    }
-
     const Logedin = false;
+let navbar=document.getElementsByClassName('navbar');
+console.log(navbar[0])
+
     const NavOpener = () => {
-        Navhide(0);
-        navlogo.setAttribute("style", "position:fixed !important;")
     }
+
+    const Navhide = () => { console.log("hide") }
+
+
     return (
 
-        <nav className="navbar">
+        <nav className="navbar" onLoad={NavLoad}>
             <div className="nav-phone">
                 <div className="hambarger-btn" onClick={NavOpener}>
                     <span className='hambarger-lines'></span>
@@ -39,8 +30,8 @@ function Navbar() {
                     </a></li>
                 </ul>
 
-                <ul className="navlist">
-                    <button className="nav-hide-btn" onClick={() => Navhide(window.innerWidth)}>&times;</button>
+                <ul className="navlist" id='NavItemList'>
+                    <button className="nav-hide-btn" onClick={() => Navhide(`-${window.innerWidth}`)}>&times;</button>
                     <li className="navitems"><a href="/"> <span>
                         Courses
                     </span>
@@ -80,5 +71,4 @@ function Navbar() {
 
     )
 }
-
 export default Navbar

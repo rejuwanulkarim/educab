@@ -1,7 +1,131 @@
-
-.courses{
+.courses {
     width: 90%;
     margin: auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.course-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 12px;
+    /* width: 8rem; */
+    border-radius: 31px;
+    gap: 11px;
+    outline: 0.01px solid gray;
+    height: 26px;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+.filter-svg {
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.courses-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: ; */
+    margin-top: 3rem;
+}
+
+.course-lists {
+    width: 25%;
+    /* border: 2px solid red; */
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.course-details {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: (2,1fr); */
+    min-width: 12rem;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 1rem;
+    padding-left: 25px;
+}
+
+.course-lists li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-lists li button {
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    width: 100%;
+    gap: 28px;
+}
+
+.course-list-symbol {
+    font-size: 16px;
+
+    /* font-weight: bold; */
+}
+
+
+.courses-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: blue;
+}
+
+.rapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.course-title {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.notice {
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    color: gray;
+    list-style-type: disc;
 }

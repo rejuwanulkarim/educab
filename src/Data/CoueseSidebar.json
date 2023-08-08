@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Popular Courses",
+        "icon": "FaHotjar"
+    },
+    {
+        "name": "Web Development",
+        "icon": "FaLaptopCode"
+    },
+    {
+        "name": "Android Development",
+        "icon": "AiFillAndroid"
+    },
+    {
+        "name": "IOS Development",
+        "icon": "FaAppStoreIos"
+    }
+]

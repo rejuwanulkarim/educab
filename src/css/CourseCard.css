@@ -1,0 +1,112 @@
+.course-card {
+    height: fit-content;
+    /* padding: 0le;:; */
+    padding-bottom: 10px;
+    width: 19rem;
+
+    /* min-height: 25rem;
+    min-width: 20.5rem; */
+    /* border: 2px solid black; */
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 0 13px -3px;
+}
+
+.card-image {
+    height: 14rem;
+    /* border: 2px solid red; */
+    background: var(--card-image);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-bottom: 3px;
+    color: blueviolet;
+    /* background-size: %; */
+    border-radius: 13px;
+}
+
+.card-image p {
+    font-size: 8px;
+}
+
+.card-image h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.review {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0.5rem;
+    font-size: 10px;
+}
+
+
+.review-rapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.review-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.review-icon {
+    fill: var(--review-btn-color);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    /* align-items: ; */
+    justify-content: space-between;
+    margin-top: 3px;
+    align-items: flex-start;
+    padding: 0 10px;
+    gap: 1rem;
+
+}
+
+.card-quote {
+    font-size: 12px;
+}
+
+.enroll-sec {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.enroll-btn {
+    padding: 13px;
+    border: none;
+    outline: white;
+    background: blue;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}

@@ -5,7 +5,8 @@
 .navitems a:hover {
     color: blue;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
 
@@ -133,7 +134,7 @@ body{
 }
 
 .nav-hide-btn {
-    display: none;
+    display: none !important;
     position: absolute;
     top: 1.6rem;
     right: 1rem;
@@ -147,6 +148,9 @@ body{
     align-items: center;
     justify-content: center;
     border: none;
+}
+.nav-item-symbol{
+    display: none;
 }
 
 /* Navbar responsive */
@@ -171,7 +175,7 @@ body{
     }
 
     .nav-hide-btn {
-        display: flex;
+        display: flex !important;
     }
 
     .navlogo {
@@ -196,6 +200,7 @@ body{
         font-size: 23px;
         /* color: black; */
         font-weight: bold;
+        display: block;
     }
 
 }
